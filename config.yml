@@ -1,4 +1,10 @@
 git:
   pagers:
     - colorArg: always
-      pager: delta --dark --paging=never --side-by-side
+      pager: >-
+        delta --dark --paging=never --side-by-side
+        --minus-style="syntax #521c1c"
+        --minus-emph-style="syntax #912b2b"
+        --plus-style="syntax #223a22"
+        --plus-emph-style="syntax #355f35"
+        --map-styles="bold purple => syntax #521c1c, bold cyan => syntax #223a22"
